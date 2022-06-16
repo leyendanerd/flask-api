@@ -6,7 +6,7 @@ from products import products
 api = Blueprint('api', __name__)
 
 
-@api.route('/ping')
+@api.route('/')
 def ping():
     return jsonify({"messages": 'pong'})
 
